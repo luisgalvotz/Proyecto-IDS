@@ -1,5 +1,5 @@
 <?php
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/categoriaDAO.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/categoriaDAO.php';
 
   session_start();
   
@@ -122,7 +122,7 @@
                   <img src="./Imagenes/Logo.png" width="70px" alt="Error de carga">
                   <h2 class="fw-bold text-center text-white">Bienvenido</h2>
                   <h4 class="fw-bold text-center py-5 text-white">Registra tu cuenta aquí</h4>
-                  <form action="/Proyecto-BDMM-PCI/php/controllers/cRegistro.php" method="POST" class="was-validated" id="register-form" enctype="multipart/form-data">
+                  <form action="/Proyecto-IDS/controllers/cRegistro.php" method="POST" class="was-validated" id="register-form" enctype="multipart/form-data">
                     <div class="mb-4 text-start text-white">
                       <div class="form-group">
                           <label for="text" class="form-label text-white ">Nombre:</label>

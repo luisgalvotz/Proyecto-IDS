@@ -1,6 +1,6 @@
 <?php
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/cursoDAO.php';
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/categoriaDAO.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/cursoDAO.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/categoriaDAO.php';
 
   session_start();
   
@@ -136,7 +136,7 @@
                         <div style="text-align: center;">
                           <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($curso_comprar->Imagen).'" style="width: 40%;" alt="">' ?>
                             <br><br>
-                            <form action="/Proyecto-BDMM-PCI/php/controllers/cPago.php" method="POST">
+                            <form action="/Proyecto-IDS/controllers/cPago.php" method="POST">
                               <div class="row">
                                 <div class="col-3">
                                   
@@ -150,7 +150,7 @@
                               </div>
                             </form>
                             <br>
-                            <form action="/Proyecto-BDMM-PCI/php/controllers/cPaypal.php" method="POST">
+                            <form action="/Proyecto-IDS/controllers/cPaypal.php" method="POST">
                               <div class="row">
                                 <div class="col-3">
                                   
