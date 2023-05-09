@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/usuarioDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/usuarioDAO.php';
 
 session_start();
 unset($_SESSION['Id_Usuario']);
@@ -26,9 +26,9 @@ $_SESSION["Tipo"] = $user->Tipo;
 
 if ($user->Tipo == "E"){
     
-    header("Location: /Proyecto-BDMM-PCI/php/views/perfilM.php?Id_Usuario=".$_SESSION["Id_Usuario"]);
+    header("Location: /Proyecto-IDS/views/perfilM.php?Id_Usuario=".$_SESSION["Id_Usuario"]);
 }
 else{
-    header("Location: /Proyecto-BDMM-PCI/php/views/perfilA.php?Id_Usuario=".$_SESSION["Id_Usuario"]);
+    header("Location: /Proyecto-IDS/views/perfilA.php?Id_Usuario=".$_SESSION["Id_Usuario"]);
 }
 exit;

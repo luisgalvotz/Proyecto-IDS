@@ -1,6 +1,6 @@
 <?php
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/usuarioDAO.php';
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/categoriaDAO.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/usuarioDAO.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/categoriaDAO.php';
 
   session_start();
 
@@ -157,7 +157,7 @@
                         <form action="./editarperfil.php">
                           <button class="btn btn-success btn-sm">Editar  <i class="fas fa-user-edit"></i></button>
                         </form>
-                        <form action="/Proyecto-BDMM-PCI/php/controllers/cLogin.php">
+                        <form action="/Proyecto-IDS/controllers/cLogin.php">
                           <button class="btn btn-danger btn-sm"> Cerrar Sesion <i class="fas fa-door-closed"></i></button>
                         </form>
                       <?php endif ?>
@@ -183,7 +183,7 @@
                       </li>
                     <?php else: ?>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Proyecto-BDMM-PCI/php/controllers/cConversacion.php?id=<?php echo $us->Id_Usuario?>">Mensajes</a>
+                        <a class="nav-link active" aria-current="page" href="/Proyecto-IDS/controllers/cConversacion.php?id=<?php echo $us->Id_Usuario?>">Mensajes</a>
                       </li>
                     <?php endif ?>
                   </ul>

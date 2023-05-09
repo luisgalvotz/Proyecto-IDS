@@ -1,7 +1,7 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/model/cursoModel.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/model/dbConnection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/cursoModel.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/dbConnection.php';
 
 class CursoDAO{
 

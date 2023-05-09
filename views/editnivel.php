@@ -1,6 +1,6 @@
 <?php
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/nivelDAO.php';
-  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/categoriaDAO.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/nivelDAO.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/categoriaDAO.php';
 
   session_start();
   

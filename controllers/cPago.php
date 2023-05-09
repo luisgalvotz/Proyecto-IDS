@@ -1,5 +1,5 @@
 <?php 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/cursoinscritoDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/cursoinscritoDAO.php';
 
 session_start();
 
@@ -26,5 +26,5 @@ else{
 
 $ciDAO->inCursoInscrito("ADNIV", $ci);
 
-header("Location: /Proyecto-BDMM-PCI/php/views/curso.php?Id_Curso=".$ci->Id_Curso);
+header("Location: /Proyecto-IDS/views/curso.php?Id_Curso=".$ci->Id_Curso);
 exit();

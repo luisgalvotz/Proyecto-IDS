@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/Model/cursoModel.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/cursoDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/Model/cursoModel.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/cursoDAO.php';
 
 session_start();
 
@@ -9,9 +9,9 @@ $id_fp = $_POST["metodo"];//esto es para cuando seleccione el boton de paypal
 $id = $_SESSION['Id_Usuario'];
 
 $fields = [ 'cmd' => '_cart', 'upload'=> '1', 'business' => 'sb-kb32d8460147@business.example.com','currency_code' => 'MXN', 'lc'=>'MX','rm'=>'2',
-'return'=>'http://localhost/Proyecto-BDMM-PCI/php/controllers/cPago.php?Id_Usuario='.$id.'&na=0&fp=Paypal&curso='.$curso_id,
-'cancel_return' => 'http://localhost/Proyecto-BDMM-PCI/php/views/curso.php?Id_Curso='.$curso_id,
-'notify_url' => 'http://localhost/Proyecto-BDMM-PCI/php/views/curso.php?Id_Curso='.$curso_id
+'return'=>'http://localhost/Proyecto-IDS/controllers/cPago.php?Id_Usuario='.$id.'&na=0&fp=Paypal&curso='.$curso_id,
+'cancel_return' => 'http://localhost/Proyecto-IDS/views/curso.php?Id_Curso='.$curso_id,
+'notify_url' => 'http://localhost/Proyecto-IDS/views/curso.php?Id_Curso='.$curso_id
 ];
 
 //recibir el curso o  nivel que se vaya a comprar por que lo vamos a mandar
