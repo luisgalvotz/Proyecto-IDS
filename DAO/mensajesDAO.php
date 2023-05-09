@@ -1,9 +1,9 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/model/usuarioModel.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/model/mensajeModel.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/model/chatModel.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/model/dbConnection.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/usuarioModel.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/mensajeModel.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/chatModel.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/dbConnection.php';
 
 class MensajeDAO{
     private $connection;

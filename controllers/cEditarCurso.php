@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/cursoDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/cursoDAO.php';
 
 session_start();
 
@@ -17,5 +17,5 @@ if ($_FILES["imagenCurso"]["size"] != 0){
 
 $cursoDAO->iudCurso("EDITA", $curso);
 
-header("Location: /Proyecto-BDMM-PCI/php/views/curso.php?Id_Curso=".$curso->Id_Curso);
+header("Location: /Proyecto-IDS/views/curso.php?Id_Curso=".$curso->Id_Curso);
 exit;

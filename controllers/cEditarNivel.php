@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/nivelDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/nivelDAO.php';
 
 session_start();
 
@@ -68,5 +68,5 @@ if ($_FILES["imagenNivel"]["size"] != 0){
 
 $nivelDAO->iudNivel("EDITA", $nivel);
 
-header("Location: /Proyecto-BDMM-PCI/php/views/nivel.php?Id_Nivel=".$nivel->Id_Nivel);
+header("Location: /Proyecto-IDS/views/nivel.php?Id_Nivel=".$nivel->Id_Nivel);
 exit;

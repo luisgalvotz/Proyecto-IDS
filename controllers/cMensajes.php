@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/mensajesDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/mensajesDAO.php';
 
 session_start();
 
@@ -12,10 +12,10 @@ $mensaje->Id_Usuario_Envia = $_SESSION["Id_Usuario"];
 $mensaje->Id_Usuario_Recibe = $_POST['id'];
         
 if (empty($mensaje->Contenido)){
-    header("Location: /Proyecto-BDMM-PCI/php/views/mensajes.php?id=".$mensaje->Id_Usuario_Recibe);
+    header("Location: /Proyecto-IDS/views/mensajes.php?id=".$mensaje->Id_Usuario_Recibe);
 }
 else{
     $mensajeDAO->iudMensaje("NUEVO", $mensaje);
-    header("Location: /Proyecto-BDMM-PCI/php/views/mensajes.php?id=".$mensaje->Id_Usuario_Recibe);
+    header("Location: /Proyecto-IDS/views/mensajes.php?id=".$mensaje->Id_Usuario_Recibe);
 }
 exit;

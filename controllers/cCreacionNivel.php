@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/nivelDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/nivelDAO.php';
 
 session_start();
 
@@ -58,5 +58,5 @@ if ($_FILES["archivoNivel"]["size"] != 0){
 
 $nivelAux = $nivelDAO->iudNivel("NUEVO", $nivel);
 
-header("Location: /Proyecto-BDMM-PCI/php/views/creacionnivel.php?Id_Curso=".$nivel->Id_Curso);
+header("Location: /Proyecto-IDS/views/creacionnivel.php?Id_Curso=".$nivel->Id_Curso);
 exit;

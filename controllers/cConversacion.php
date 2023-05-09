@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-BDMM-PCI/php/DAO/mensajesDAO.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/mensajesDAO.php';
 
 session_start();
 
@@ -18,6 +18,6 @@ if (empty($msgAux)){
     $mensajeDAO->iudMensaje("NUEVO", $mensaje);
 }
 
-header("Location: /Proyecto-BDMM-PCI/php/views/mensajes.php?id=".$ous);
+header("Location: /Proyecto-IDS/views/mensajes.php?id=".$ous);
 
 exit;
