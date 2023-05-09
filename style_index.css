@@ -1,0 +1,254 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  header .logo img {
+    width: 80px; /* ajusta este valor para que se adapte a tu imagen */
+    margin-right: 10px;
+  }
+
+  header .logo{
+    display: flex;
+  align-items: center;
+  }
+  
+  header a {
+    color: rgba(128, 128, 128, 0.9);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  header a:hover {
+    color: #333;
+    padding: 10px;
+    transform: scale(1.2);
+    border-radius: 10px;
+    /* Resto del código */
+  }
+
+  header a:hover.inicio {
+    background-color: #bfa5ca;
+  }
+  
+  header a:hover.psi {
+    background-color: #FFF9BF;
+  }
+  
+  header a:hover.cit {
+    background-color: #FBC9B0;
+  }
+  header a:hover.button-link {
+    color: #fff;
+  }
+  
+  header .button-link {
+    color: #fff;
+    background-color: #4f818e;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  header .button-link:hover {
+    background-color: #1e5d70;
+  }
+.logo h1 {
+    margin: 0;
+    color: #1e5d70;
+}
+
+.slogan h2 {
+    margin: 0;
+}
+
+.btn-login {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #3e8e41;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #4f818e;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -100px; /* 100px es la altura del footer */
+    height: 100px;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .center-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .first{
+    margin-left: 20px;
+  }
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+  
+  .col h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+  
+  .col ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .col ul li {
+    margin-bottom: 5px;
+  }
+
+
+
+
+  /* INFORMACION DEL  DASHBOARD*/
+
+  .content {
+    min-height: calc(100vh - 100px); /* 100px es la altura del footer */
+  }
+
+  .frase-del-dia {
+    background-color: #fff; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 2px 2px 5px #ccc; /* Sombra */
+    margin: 20px auto; /* Margen y centrado horizontal */
+    max-width: 600px; /* Ancho máximo */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centrado del texto */
+  }
+  
+  .frase {
+    font-size: 24px; /* Tamaño de letra */
+    font-style: italic; /* Estilo de letra */
+    margin: 0; /* Sin margen interno */
+  }
+
+
+  .psicologa {
+    background-color: white;
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ccc;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.info-psicologa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-psicologa img{
+    max-width: 200px;
+    height: auto;
+}
+
+.nombre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.nombre:hover {
+    color: #4f818e;
+}
+
+img {
+    max-width: 100%;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+  
+  .tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px; 
+  }
+  
+  .card {
+    width: 300px;
+    margin-bottom: 70px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    text-align: center;
+  }
