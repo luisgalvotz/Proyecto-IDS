@@ -96,6 +96,7 @@ header {
 /* FOOTER */
 
 footer {
+    width: 94%;
     background-color: #4f818e;
     color: white;
     padding: 40px;
@@ -159,44 +160,45 @@ footer {
     min-height: calc(100vh - 100px); /* 100px es la altura del footer */
   }
 
-  .frase-del-dia {
-    background-color: #fff; /* Color de fondo */
-    border-radius: 5px; /* Borde redondeado */
-    box-shadow: 2px 2px 5px #ccc; /* Sombra */
-    margin: 20px auto; /* Margen y centrado horizontal */
-    max-width: 600px; /* Ancho máximo */
-    padding: 20px; /* Espacio interno */
-    text-align: center; /* Centrado del texto */
-  }
-  
-  .frase {
-    font-size: 24px; /* Tamaño de letra */
-    font-style: italic; /* Estilo de letra */
-    margin: 0; /* Sin margen interno */
-  }
+   /* INFORMACION DE LA PSICOLOGA*/
 
-
-  .psicologa {
+   .psicologa {
+    display: flex;
+  width: 100%;
+    width: 30%; /* Cambiar el tamaño de la sección a un ancho del 30% del contenedor */
+  float: left; /* Mover la sección a la izquierda */
+  margin-right: 5%;
     background-color: white;
     max-width: 800px;
-    width: 80%;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 2px 2px 5px #ccc;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 40px;
-    display: flex;
+    position: relative;
   }
   
   .left2 {
-    flex: 1;
+    
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .left2 img {
+    position: absolute;
+    top: 0;
+  left: 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .psicologa .right2 img {
+    display: block;
+    margin: 0 auto;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -210,17 +212,15 @@ footer {
   }
   
   .nombre {
+    margin-top: 10px;
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: #333;
+    color: #4f818e;
     display: block;
     margin-bottom: 10px;
   }
   
-  .nombre:hover {
-    color: #4f818e;
-  }
   
   .cedula,
   .email,
@@ -229,37 +229,61 @@ footer {
     line-height: 1.5;
     margin-bottom: 10px;
   }
-  
-  .tarjetas {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-bottom: 50px; 
+
+  .espacio2{
+    margin-top: 20px;
   }
-  
-  .card {
-    width: 300px;
-    margin-bottom: 70px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+
+  .experiencia {
+    width: 30%;
+    clear: both;
+    display: block;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+
+
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 5px #ccc;
     text-align: center;
+    border-radius: 10px;
   }
-  
-  .card img {
+
+  .linea-gris {
+    border: none;
+    border-top: 1px solid #ccc;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 10px;
+    margin: 0 auto;
   }
 
-  .card-title {
+  h3 {
+    color: #4f818e;;
+    margin-left: 20px;
+    text-align: left;
     font-size: 20px;
-    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
-
-
   
+  ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    
+    margin-left: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  ul li:before {
+    content: "\2022";
+    margin-right: 10px;
+  }
