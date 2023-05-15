@@ -158,6 +158,8 @@ footer {
 
   .content {
     min-height: calc(100vh - 100px); /* 100px es la altura del footer */
+    display: flex;
+flex-direction: row;
   }
 
    /* INFORMACION DE LA PSICOLOGA*/
@@ -287,3 +289,122 @@ footer {
     content: "\2022";
     margin-right: 10px;
   }
+
+
+  .titulo-comentarios {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #4f818e;
+    margin-left: -165px;
+  }
+
+  .comentarios-container {
+    margin-left: 1000px;
+  }
+
+
+  .textoCombo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+   margin-left: -440px;
+   height: 250px;
+   
+}
+
+.textoCombo textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    text-align: justify;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.2rem;
+    border: none;
+    resize: none;
+    outline: none;
+    border: 1px solid #4f818e;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    background-color: white;
+}
+
+.textoCombo input[type="button"] {
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #b2de93;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.textoCombo input[type="button"]:hover {
+  background-color: #8cbf6b;
+  padding: 10px;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.recuadro-blanco {
+  background-color: white;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.recuadro-blanco p {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.recuadro-comentarios {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 640px;
+  margin-left: -440px;
+  height: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+}
+
+
+
+.izq {
+  width: 100%;
+  height: auto;
+  padding-right: 20px;
+  }
+  
+  .der {
+  padding-left: 20px;
+  margin-left: -1370px;
+  margin-bottom: 130px;
+  }
+
+.imagen-comentarios{
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  float: left;
+}
+
+.contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  margin-left: 20px; /* Ajusta el margen izquierdo según tus necesidades */
+  width: 100%;
+  font-size: 20px;
+}
