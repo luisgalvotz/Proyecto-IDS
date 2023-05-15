@@ -1,0 +1,253 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  header .logo img {
+    width: 80px; /* ajusta este valor para que se adapte a tu imagen */
+    margin-right: 10px;
+  }
+
+  header .logo{
+    display: flex;
+  align-items: center;
+  }
+  
+  header a {
+    color: rgba(128, 128, 128, 0.9);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  header a:hover {
+    color: #333;
+    padding: 10px;
+    transform: scale(1.2);
+    border-radius: 10px;
+    /* Resto del código */
+  }
+
+  header a:hover.inicio {
+    background-color: #bfa5ca;
+  }
+  
+  header a:hover.psi {
+    background-color: #FFF9BF;
+  }
+  
+  header a:hover.cit {
+    background-color: #FBC9B0;
+  }
+  header a:hover.button-link {
+    color: #fff;
+  }
+  
+  header .button-link {
+    color: #fff;
+    background-color: #4f818e;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  header .button-link:hover {
+    background-color: #1e5d70;
+  }
+.logo h1 {
+    margin: 0;
+    color: #1e5d70;
+}
+
+.slogan h2 {
+    margin: 0;
+}
+
+.btn-login {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #3e8e41;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #4f818e;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: -100px; /* 100px es la altura del footer */
+    height: 100px;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .center-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .first{
+    margin-left: 20px;
+  }
+  .right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+  
+  .col h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+  
+  .col ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .col ul li {
+    margin-bottom: 5px;
+  }
+
+
+
+
+  /* INFORMACION DEL  DASHBOARD*/
+
+  .content {
+    min-height: calc(100vh - 100px); /* 100px es la altura del footer */
+  }
+
+  .frase-del-dia {
+    background-color: white; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 2px 2px 5px #ccc; /* Sombra */
+    margin: 20px auto; /* Margen y centrado horizontal */
+    max-width: 600px; /* Ancho máximo */
+    height: 50px;
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centrado del texto */
+    color: #1e5d70;
+  }
+  
+  .frase {
+    font-size: 24px; /* Tamaño de letra */
+    font-style: italic; /* Estilo de letra */
+    margin: 0; /* Sin margen interno */
+  }
+
+
+  
+  .cita2{
+    background-color: white; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 2px 2px 5px #ccc; /* Sombra */
+    margin: 20px auto; /* Margen y centrado horizontal */
+    max-width: 1100px; /* Ancho máximo */
+    height: 670px;
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 200px;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #4f818e;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    background-color: white;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    background-color: #fff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+
+  
