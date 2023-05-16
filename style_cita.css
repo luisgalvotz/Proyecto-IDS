@@ -180,6 +180,7 @@ footer {
 
   
   .cita2{
+    overflow-y: auto;
     background-color: white; /* Color de fondo */
     border-radius: 5px; /* Borde redondeado */
     box-shadow: 2px 2px 5px #ccc; /* Sombra */
@@ -189,6 +190,23 @@ footer {
     padding: 20px; /* Espacio interno */
     text-align: center; /* Centrado del texto */
     margin-bottom: 200px;
+  }
+
+  .cita2::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .cita2::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+  .cita2::-webkit-scrollbar-thumb {
+    background-color: #C7C7C7; /* Color del botón de la barra de desplazamiento */
+    border-radius: 5px; /* Borde redondeado del botón */
+  }
+  
+  .cita2::-webkit-scrollbar-thumb:hover {
+    background-color: #A1A1A1; /* Color del botón de la barra de desplazamiento al pasar el cursor */
   }
 
 
@@ -250,4 +268,120 @@ footer {
     background-color: #3e8e41;
   }
 
+  #div1, #div2 {
+    display: none;
+  }
+
+  #div1 {
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex; /* Establece un contenedor flexible */
+    align-items: center; /* Centra verticalmente los elementos secundarios */
+    justify-content: center; /* Centra horizontalmente los elementos secundarios */
+    flex-wrap: wrap; /* Envuelve los elementos secundarios a la siguiente fila */
+    width: 80%; /* Cambia el valor para ajustar el ancho */
+    height: 670px; /* Cambia el valor para ajustar la altura */
+    margin-bottom: 50px;
+  }
+  #div2 {
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex; /* Establece un contenedor flexible */
+    align-items: center; /* Centra verticalmente los elementos secundarios */
+    justify-content: center; /* Centra horizontalmente los elementos secundarios */
+    flex-wrap: wrap; /* Envuelve los elementos secundarios a la siguiente fila */
+    width: 80%; /* Cambia el valor para ajustar el ancho */
+    height: 670px; /* Cambia el valor para ajustar la altura */
+    margin-bottom: 50px;
+  }
+  .historial {
+   background-color: #FFF9BF;
+   min-height: 130px;
+    flex-basis: calc(25% - 20px); /* Cambia el valor para ajustar el ancho del div */
+    height: 100px; /* Cambia el valor para ajustar la altura del div */
+    margin: 10px; /* Agrega un margen alrededor del div */
+    padding: 20px; /* Cambia el valor para ajustar el relleno interno del div */
+     /* Cambia el color de fondo para visualizar el div */
+     border-radius: 30px;
+     display: flex;
+  position: relative;
+  overflow: auto;
   
+  }
+  .historial::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .historial::-webkit-scrollbar-track {
+    background-color:#F5F5F5; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+  .historial::-webkit-scrollbar-thumb {
+    background-color: #C7C7C7; /* Color del botón de la barra de desplazamiento */
+    border-radius: 5px; /* Borde redondeado del botón */
+  }
+  
+  .historial::-webkit-scrollbar-thumb:hover {
+    background-color: #A1A1A1; /* Color del botón de la barra de desplazamiento al pasar el cursor */
+  }
+
+  
+  .imagen-cita{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0; /* Evita que la imagen se reduzca para ajustarse al contenedor */
+    object-fit: cover;
+  }
+ 
+  .contenedor-texto {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    text-align: left;
+  }
+  
+  .contenedor-texto p {
+    margin-top: 5px; /* Ajusta el margen superior de los párrafos */
+    margin-bottom: 15px; /* Ajusta el margen inferior de los párrafos */
+    word-wrap: break-word;
+  
+  }
+
+  .hist{
+    background-color: #4f818e;
+  }
+
+  .hist:hover {
+    background-color: #1E5D70;
+  }
+  
+  .boton-aprobar,
+  .boton-rechazar {
+    width: 110px;
+    height: 40px;
+    margin-left: 10px; /* Ajusta el margen izquierdo entre los botones */
+  }
+  
+  .boton-aprobar {
+    background-color:#57CA5B;
+    color: white;
+  }
+  
+  .boton-rechazar {
+    background-color: #ED6767;
+    color: white;
+  }
+
+  .boton-rechazar:hover {
+    background-color: #F34141;
+    color: white;
+  }
+  
+  .botones {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    display: flex;
+  }

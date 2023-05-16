@@ -31,8 +31,128 @@
 
         <div class="cita2">
             <div class="contenedor">
-                
+                <button onclick="mostrarDiv1()" class="hist">Historial de citas</button>
+                <button onclick="mostrarDiv2()">Citas pendientes</button>
+
+                <div id="div1">
+                    <div class="historial">
+                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                        <div class="contenedor-texto">
+                            <p><b>Estado:</b> Cancelada</p>
+                            <p><b>Fecha:</b> 21/08/2023</p>
+                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
+                            <p><b>Motivo de consulta:</b> Estres cronico</p>
+                            <p><b>Teléfono:</b> 1234567890</p>
+                            <div style="
+                            margin-bottom: 10px;">
+                                <p><b>Correo: </b>juan@example.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="historial">
+                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                        <div class="contenedor-texto">
+                            <p><b>Estado:</b> Realizada</p>
+                            <p><b>Fecha:</b> 21/08/2023</p>
+                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
+                            <p><b>Motivo de consulta:</b> Estres cronico</p>
+                            <p><b>Teléfono:</b> 1234567890</p>
+                            <div style="
+                            margin-bottom: 10px;">
+                                <p><b>Correo: </b>juan@example.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="historial">
+                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                        <div class="contenedor-texto">
+                            <p><b>Estado:</b>Pendiente</p>
+                            <p><b>Fecha:</b> 21/08/2023</p>
+                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
+                            <p><b>Motivo de consulta:</b> Estres cronico</p>
+                            <p><b>Teléfono:</b> 1234567890</p>
+                            <div style="
+                            margin-bottom: 10px;">
+                                <p><b>Correo: </b>juan@example.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div id="div2">
+                    <div class="historial">
+                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                        <div class="contenedor-texto">
+                            <p><b>Fecha:</b> 21/08/2023</p>
+                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
+                            <p><b>Motivo de consulta:</b> Estres cronico</p>
+                            <p><b>Teléfono:</b> 1234567890</p>
+                            <div style="
+                            margin-bottom: 10px;">
+                                <p><b>Correo: </b>juan@example.com</p>
+                            </div>
+                        </div>
+                        <div class="botones">
+                            <button class="boton-aprobar">Aprobar</button>
+                            <button class="boton-rechazar">Rechazar</button>
+                          </div>
+
+                    </div>
+
+                    <div class="historial">
+                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                        <div class="contenedor-texto">
+                            <p><b>Fecha:</b> 21/08/2023</p>
+                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
+                            <p><b>Motivo de consulta:</b> Estres cronico</p>
+                            <p><b>Teléfono:</b> 1234567890</p>
+                            <div style="
+                            margin-bottom: 10px;">
+                                <p><b>Correo: </b>juan@example.com</p>
+                            </div>
+                        </div>
+                        <div class="botones">
+                            <button class="boton-aprobar">Aprobar</button>
+                            <button class="boton-rechazar">Rechazar</button>
+                          </div>
+
+                    </div>
+
+                    <div class="historial">
+                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                        <div class="contenedor-texto">
+                            <p><b>Fecha:</b> 21/08/2023</p>
+                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
+                            <p><b>Motivo de consulta:</b> Estres cronico</p>
+                            <p><b>Teléfono:</b> 1234567890</p>
+                            <div style="
+                            margin-bottom: 10px;">
+                                <p><b>Correo: </b>juan@example.com</p>
+                            </div>
+                        </div>
+                        <div class="botones">
+                            <button class="boton-aprobar">Aprobar</button>
+                            <button class="boton-rechazar">Rechazar</button>
+                          </div>
+
+                    </div>
+                    
+
+                    
+
+                </div>
+
+
+            </div>
         </div>
+
+    </div>
 
 
 
@@ -63,6 +183,17 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function mostrarDiv1() {
+            document.getElementById("div1").style.display = "block";
+            document.getElementById("div2").style.display = "none";
+        }
+
+        function mostrarDiv2() {
+            document.getElementById("div2").style.display = "block";
+            document.getElementById("div1").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
