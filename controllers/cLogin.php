@@ -4,29 +4,22 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/usuarioDAO.php';
 
 session_start();
 unset($_SESSION['Id_Usuario']);
-unset($_SESSION['Tipo']);
 
 $usuarioDAO = new UsuarioDAO();
 
 $user = new UsuarioModel();
 
-$user->Email = $_POST['email'];
+$user->Nombre_Usuario = $_POST['username'];
 $user->Contrasena = $_POST['password'];
 
-$userAux = $usuarioDAO->getUser("LOGIN", $user);
+$userAux = $usuarioDAO->getUser($user);
 
-if (empty($userAux)){
-    header("Location: /Proyecto-IDS/views/login.php");
+if (empty($userAux->Id_Usuario)){
+    header("Location: /Proyecto-IDS/login.php");
 }
 else{
-    $_SESSION["Id_Usuario"] = $userAux[0]->Id_Usuario;
-    $_SESSION["Tipo"] = $userAux[0]->Tipo;
+    $_SESSION["Id_Usuario"] = $userAux->Id_Usuario;
     
-    if ($userAux[0]->Tipo == "E"){
-        header("Location: /Proyecto-IDS/views/perfilM.php?Id_Usuario=".$_SESSION["Id_Usuario"]);
-    }
-    else{
-        header("Location: /Proyecto-IDS/views/perfilA.php?Id_Usuario=".$_SESSION["Id_Usuario"]);
-    }
+    header("Location: /Proyecto-IDS/psicologaInicio.php");
 }
 exit;

@@ -369,7 +369,7 @@ flex-direction: row;
     background-color: white;
 }
 
-.textoCombo input[type="button"] {
+.textoCombo button {
     margin: 10px;
     padding: 10px;
     width: 40%;
@@ -382,7 +382,7 @@ flex-direction: row;
     font-weight: bold;
 }
 
-.textoCombo input[type="button"]:hover {
+.textoCombo button:hover {
   background-color: #8cbf6b;
   padding: 10px;
     transform: scale(1.1);

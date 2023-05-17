@@ -3,7 +3,7 @@
 class BaseDeDatos
 {
     private $host = "localhost";
-    private $dbName = "bd_welearn";
+    private $dbName = "bd_psicologa";
     private $username = "root";
     private $password = "";
 
