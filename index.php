@@ -29,12 +29,12 @@
 
       <div class="psicologa">
         <div class="left2">
-          <img src="img/psicologa2.jpg" alt="Foto de la Psicóloga">
+          <img src="img/psicologa2.png" alt="Foto de la Psicóloga">
         </div>
         <div class="right2">
           <a href="perfil.php" class="nombre">Rubicelia Barrientos</a>
           <p class="cedula">Número de Cédula:  11438988 12436391 </p>
-          <p class="email">Email: barrientos@gmail.com</p>
+          <p class="email">Email: psi.rubibarrientos@gmail.com</p>
           <p class="frase">"Un espacio seguro para escucharte"</p>
         </div>
       </div>
@@ -90,31 +90,30 @@
       </div>
 
 </div>
-	<footer>
-		<div class="col first">
+    <footer>
+        <div class="col first">
             <h3>Servicios</h3>
             <ul>
-              <li>Terapia individual</li>
-              <li>Terapia de pareja</li>
-              <li>Psicoanálisis</li>
-              <li>Medicación</li>
+                <li>Terapia individual</li>
+                <li>Terapia de pareja</li>
+                <li>Psicoanálisis</li>
             </ul>
-          </div>
-          <div class="col center-col">
+        </div>
+        <div class="col center-col">
             <h3>Contacto</h3>
             <ul>
-              <li>Teléfono: 123-456-7890</li>
-              <li>Correo electrónico: info@miempresa.com</li>
+                <li>Teléfono: 811-667-9802</li>
+                <li>Correo electrónico: psi.rubibarrientos@gmail.com</li>
             </ul>
-          </div>
-          <div class="col right-col">
+        </div>
+        <div class="col right-col">
             <h3>Dirección</h3>
             <ul>
-              <li>Calle Hemmings 123</li>
-              <li>Monterrey, Nuevo León</li>
-              <li>Código Postal 12345</li>
+                <li>Rosas 3413, Alta Vista Invernadero</li>
+                <li>Monterrey, Nuevo León</li>
+                <li>Código Postal 64770</li>
             </ul>
-          </div>
-	</footer>
+        </div>
+    </footer>
 </body>
 </html>

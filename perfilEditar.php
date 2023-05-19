@@ -51,8 +51,8 @@
 
                     <div class="right2">
                         <form action="">
-                            <img src="img/psicologa2.jpg" alt="Descripción de la imagen">
-                            <a href="perfil.php" class="nombre">Rubicelia Barrientos Hooding</a>
+                            <img src="img/psicologa2.png" alt="Descripción de la imagen">
+                            <a href="perfil.php" class="nombre">Rubicelia Barrientos Bautista</a>
                             <input class="email" type="text" value="" placeholder="Email">
                             <input class="frase" type="text" value="" placeholder="Teléfono">
                             <input class="frase" type="text"
@@ -77,9 +77,9 @@
                 </ul>
                 <h3>Formación Académica</h3>
                 <ul>
-                    <li>Doctorado en Psicología - Universidad Nacional Autónoma de México</li>
-                    <li>Maestría en Psicología Clínica - Universidad de Buenos Aires</li>
-                    <li>Licenciatura en Psicología - Universidad Complutense de Madrid</li>
+                    <li>Especialidad en Clínica Cognitivo-Conductual - Universidad de Monterrey</li>
+                    <li>Maestría en Psicología Clínica - Universidad de Monterrey</li>
+                    <li>Licenciatura en Psicología - Universidad Autónoma de Nuevo León</li>
                 </ul>
             </div>
 
@@ -123,22 +123,21 @@
                 <li>Terapia individual</li>
                 <li>Terapia de pareja</li>
                 <li>Psicoanálisis</li>
-                <li>Medicación</li>
             </ul>
         </div>
         <div class="col center-col">
             <h3>Contacto</h3>
             <ul>
-                <li>Teléfono: 123-456-7890</li>
-                <li>Correo electrónico: info@miempresa.com</li>
+                <li>Teléfono: 811-667-9802</li>
+                <li>Correo electrónico: psi.rubibarrientos@gmail.com</li>
             </ul>
         </div>
         <div class="col right-col">
             <h3>Dirección</h3>
             <ul>
-                <li>Calle Hemmings 123</li>
+                <li>Rosas 3413, Alta Vista Invernadero</li>
                 <li>Monterrey, Nuevo León</li>
-                <li>Código Postal 12345</li>
+                <li>Código Postal 64770</li>
             </ul>
         </div>
     </footer>

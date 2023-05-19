@@ -78,22 +78,21 @@
                 <li>Terapia individual</li>
                 <li>Terapia de pareja</li>
                 <li>Psicoanálisis</li>
-                <li>Medicación</li>
             </ul>
         </div>
         <div class="col center-col">
             <h3>Contacto</h3>
             <ul>
-                <li>Teléfono: 123-456-7890</li>
-                <li>Correo electrónico: info@miempresa.com</li>
+                <li>Teléfono: 811-667-9802</li>
+                <li>Correo electrónico: psi.rubibarrientos@gmail.com</li>
             </ul>
         </div>
         <div class="col right-col">
             <h3>Dirección</h3>
             <ul>
-                <li>Calle Hemmings 123</li>
+                <li>Rosas 3413, Alta Vista Invernadero</li>
                 <li>Monterrey, Nuevo León</li>
-                <li>Código Postal 12345</li>
+                <li>Código Postal 64770</li>
             </ul>
         </div>
     </footer>
