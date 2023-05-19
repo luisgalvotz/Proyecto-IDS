@@ -31,31 +31,36 @@
 
         <div class="cita2">
             <div class="contenedor">
-                <form>
+                <form action="/Proyecto-IDS/controllers/cCita.php" method="post">
                     <h2>Datos de Consulta</h2>
                     
                     <div class="input-container">
-                      <label for="name">Nombre completo</label>
-                      <input type="text" id="name" name="name" required>
+                      <label for=" nombre">Nombre completo</label>
+                      <input type="text" id=" nombre"  name=" nombre" required>
                     </div>
-                    
+
                     <div class="input-container">
-                      <label for="email">Télefono</label>
+                      <label for="email">Correo</label>
                       <input type="email" id="email" name="email" required>
                     </div>
                     
                     <div class="input-container">
-                      <label for="message">Motivo de la consulta</label>
-                      <textarea id="message" name="message" rows="5" required></textarea>
+                      <label for="telefono">Télefono</label>
+                      <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="input-container">
+                      <label for="motivo">Motivo de la consulta</label>
+                      <textarea id="motivo" name="motivo" rows="5" required></textarea>
                     </div>
 
                     <div class="input-container">
-                        <label for="message">Fecha</label>
+                        <label for="fecha">Fecha</label>
                         <input type="date" id="fecha" name="fecha" required>
                       </div>
 
                       <div class="input-container">
-                        <label for="message">Hora</label>
+                        <label for="hora">Hora</label>
                         <input type="time" id="hora" name="hora" required>
                       </div>
                     

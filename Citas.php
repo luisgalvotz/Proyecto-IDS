@@ -1,3 +1,17 @@
+<?php
+  require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/DAO/citaDAO.php';
+
+  session_start();
+  
+  $usuarioActivo = 0;
+  if (isset($_SESSION["Id_Usuario"])){
+    $usuarioActivo = $_SESSION["Id_Usuario"];
+  }
+
+  $citaDAO = new CitaDAO();
+  $citas = $citaDAO->getCitas("GET");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,121 +45,60 @@
 
         <div class="cita2">
             <div class="contenedor">
-                <button onclick="mostrarDiv1()" class="hist">Historial de citas</button>
-                <button onclick="mostrarDiv2()">Citas pendientes</button>
+                <button id="btnHistorial" onclick="mostrarDiv1()" class="hist">Historial de citas</button>
+                <button id="btnPendientes" onclick="mostrarDiv2()">Citas pendientes</button>
 
                 <div id="div1">
-                    <div class="historial">
-                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
-                        <div class="contenedor-texto">
-                            <p><b>Estado:</b> Cancelada</p>
-                            <p><b>Fecha:</b> 21/08/2023</p>
-                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
-                            <p><b>Motivo de consulta:</b> Estres cronico</p>
-                            <p><b>Teléfono:</b> 1234567890</p>
-                            <div style="
-                            margin-bottom: 10px;">
-                                <p><b>Correo: </b>juan@example.com</p>
+                    <?php foreach($citas as $ct){ ?>
+
+                        <div class="historial">
+                            <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                            <div class="contenedor-texto">
+                                <p><b>Estado:</b> <?php echo $ct->Aprobada; ?></p>
+                                <p><b>Fecha:</b> <?php echo date('d/m/Y', strtotime($ct->Fecha)) . ', ' . date('h:i a', strtotime($ct->Hora)); ?></p>
+                                <p><b>Nombre del paciente:</b> <?php echo $ct->Nombre_Paciente; ?></p>
+                                <p><b>Motivo de consulta:</b> <?php echo $ct->Motivo; ?></p>
+                                <p><b>Teléfono:</b> <?php echo $ct->Telefono; ?></p>
+                                <div style="
+                                margin-bottom: 10px;">
+                                    <p><b>Correo: </b><?php echo $ct->Email; ?></p>
+                                </div>
                             </div>
+
                         </div>
-
-                    </div>
-                    <div class="historial">
-                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
-                        <div class="contenedor-texto">
-                            <p><b>Estado:</b> Realizada</p>
-                            <p><b>Fecha:</b> 21/08/2023</p>
-                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
-                            <p><b>Motivo de consulta:</b> Estres cronico</p>
-                            <p><b>Teléfono:</b> 1234567890</p>
-                            <div style="
-                            margin-bottom: 10px;">
-                                <p><b>Correo: </b>juan@example.com</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="historial">
-                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
-                        <div class="contenedor-texto">
-                            <p><b>Estado:</b>Pendiente</p>
-                            <p><b>Fecha:</b> 21/08/2023</p>
-                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
-                            <p><b>Motivo de consulta:</b> Estres cronico</p>
-                            <p><b>Teléfono:</b> 1234567890</p>
-                            <div style="
-                            margin-bottom: 10px;">
-                                <p><b>Correo: </b>juan@example.com</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-
+                    <?php } ?>
 
                 </div>
 
                 <div id="div2">
-                    <div class="historial">
-                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
-                        <div class="contenedor-texto">
-                            <p><b>Fecha:</b> 21/08/2023</p>
-                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
-                            <p><b>Motivo de consulta:</b> Estres cronico</p>
-                            <p><b>Teléfono:</b> 1234567890</p>
-                            <div style="
-                            margin-bottom: 10px;">
-                                <p><b>Correo: </b>juan@example.com</p>
-                            </div>
-                        </div>
-                        <div class="botones">
-                            <button class="boton-aprobar">Aprobar</button>
-                            <button class="boton-rechazar">Rechazar</button>
-                          </div>
-
-                    </div>
-
-                    <div class="historial">
-                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
-                        <div class="contenedor-texto">
-                            <p><b>Fecha:</b> 21/08/2023</p>
-                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
-                            <p><b>Motivo de consulta:</b> Estres cronico</p>
-                            <p><b>Teléfono:</b> 1234567890</p>
-                            <div style="
-                            margin-bottom: 10px;">
-                                <p><b>Correo: </b>juan@example.com</p>
-                            </div>
-                        </div>
-                        <div class="botones">
-                            <button class="boton-aprobar">Aprobar</button>
-                            <button class="boton-rechazar">Rechazar</button>
-                          </div>
-
-                    </div>
-
-                    <div class="historial">
-                        <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
-                        <div class="contenedor-texto">
-                            <p><b>Fecha:</b> 21/08/2023</p>
-                            <p><b>Nombre del paciente:</b> Juan Pérez</p>
-                            <p><b>Motivo de consulta:</b> Estres cronico</p>
-                            <p><b>Teléfono:</b> 1234567890</p>
-                            <div style="
-                            margin-bottom: 10px;">
-                                <p><b>Correo: </b>juan@example.com</p>
-                            </div>
-                        </div>
-                        <div class="botones">
-                            <button class="boton-aprobar">Aprobar</button>
-                            <button class="boton-rechazar">Rechazar</button>
-                          </div>
-
-                    </div>
                     
+                    <?php foreach($citas as $ct){ 
+                        if($ct->Aprobada == 'Pendiente'){?>
 
-                    
+                        <div class="historial">
+                            <img src="img/cita.png" alt="descripción de la imagen" class="imagen-cita">
+                            <div class="contenedor-texto">
+                                <p><b>Estado:</b> <?php echo $ct->Aprobada; ?></p>
+                                <p><b>Fecha:</b> <?php echo date('d/m/Y', strtotime($ct->Fecha)) . ', ' . date('h:i a', strtotime($ct->Hora)); ?></p>
+                                <p><b>Nombre del paciente:</b> <?php echo $ct->Nombre_Paciente; ?></p>
+                                <p><b>Motivo de consulta:</b> <?php echo $ct->Motivo; ?></p>
+                                <p><b>Teléfono:</b> <?php echo $ct->Telefono; ?></p>
+                                <div style="
+                                margin-bottom: 10px;">
+                                    <p><b>Correo: </b><?php echo $ct->Email; ?></p>
+                                </div>
+                            </div>
+                            <div class="botones">
+                                <form action="/Proyecto-IDS/controllers/cCita.php" method="post">
+                                    <input type="text" name="id" id="id" value="<?php echo $ct->Id_Cita; ?>" hidden>
+                                    <button type="submit" class="boton-aprobar" name="aprobada" value="1">Aprobar</button>
+                                    <button type="submit" class="boton-rechazar" name="aprobada" value="0">Rechazar</button>
+                                </form>
+                            </div>
 
+                        </div>
+                        <?php }
+                    } ?>
                 </div>
 
 
@@ -187,12 +140,30 @@
         function mostrarDiv1() {
             document.getElementById("div1").style.display = "block";
             document.getElementById("div2").style.display = "none";
+
+            document.getElementById("btnHistorial").style.background = "white";
+            document.getElementById("btnHistorial").style.color = "#4f818e";
+            document.getElementById("btnHistorial").style.border = "solid #4f818e";
+
+            document.getElementById("btnPendientes").style.background = "#57CA5B";
+            document.getElementById("btnPendientes").style.color = "white";
+            document.getElementById("btnPendientes").style.border = "none";
         }
 
         function mostrarDiv2() {
             document.getElementById("div2").style.display = "block";
             document.getElementById("div1").style.display = "none";
+
+            document.getElementById("btnHistorial").style.background = "#4f818e";
+            document.getElementById("btnHistorial").style.color = "white";
+            document.getElementById("btnHistorial").style.border = "none";
+
+            document.getElementById("btnPendientes").style.background = "white";
+            document.getElementById("btnPendientes").style.color = "#57CA5B";
+            document.getElementById("btnPendientes").style.border = "solid #57CA5B";
         }
+
+        mostrarDiv1();
     </script>
 </body>
 

@@ -385,3 +385,14 @@ footer {
     right: 30px;
     display: flex;
   }
+
+  .botones > form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+  }
