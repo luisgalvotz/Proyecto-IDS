@@ -1,3 +1,12 @@
+<?php
+  session_start();
+  
+  $usuarioActivo = 0;
+  if (isset($_SESSION["Id_Usuario"])){
+    $usuarioActivo = $_SESSION["Id_Usuario"];
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +38,7 @@
 
       <div class="psicologa">
         <div class="left2">
-          <img src="img/psicologa2.jpg" alt="Foto de la Psicóloga">
+          <img src="img/psicologa2.png" alt="Foto de la Psicóloga">
         </div>
         <div class="right2">
           <a href="perfil.php" class="nombre">Rubicelia Barrientos</a>

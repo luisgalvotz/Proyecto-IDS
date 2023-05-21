@@ -50,17 +50,12 @@
                 <div class="psicologa">
 
                     <div class="right2">
-                        <form action="">
-                            <img src="img/psicologa2.png" alt="Descripción de la imagen">
-                            <a href="perfil.php" class="nombre">Rubicelia Barrientos Bautista</a>
-                            <input class="email" type="text" value="" placeholder="Email">
-                            <input class="frase" type="text" value="" placeholder="Teléfono">
-                            <input class="frase" type="text"
-                                value="" placeholder="Consultorio">
-                            <div class="boton-container">
-                                <input type="submit" value="Guardar" class="guardar">
-                            </div>
-                        </form>
+                        <img src="img/psicologa2.png" alt="Descripción de la imagen">
+                        <a href="perfil.php" class="nombre">Rubicelia Barrientos Bautista</a>
+                        <p class="cedula">Número de Cédula: 11438988 12436391 </p>
+                        <p class="email">Email: psi.rubibarrientos@gmail.com</p>
+                        <p class="frase">Teléfono: (+52) 8116679802</p>
+                        <p class="frase">Consultorio: Rosas 3413, Alta Vista Invernadero, Monterrey, Nuevo León</p>
                     </div>
                 </div>
             </div>

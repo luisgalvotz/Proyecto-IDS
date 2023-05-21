@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/resenaModel.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/citaModel.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/Proyecto-IDS/model/dbConnection.php';
 
 class CitaDAO{

@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  
+  if (isset($_SESSION["Id_Usuario"])){
+    $_SESSION["Id_Usuario"] = 0;
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
